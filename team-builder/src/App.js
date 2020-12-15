@@ -1,11 +1,38 @@
 import logo from './logo.svg';
+import React, {useState} from "react";
 import Form from "./components/Form";
 import './App.css';
+import TeamList from "./components/TeamList";
+
+const defaultValues = {
+  ///// TEXT INPUTS /////
+  username: "",
+  email: "",
+  ///// DROPDOWN /////
+  role: "",
+};
 
 function App() {
-  return (
+  //Values of the form
+  const [formValues, setFormValues] = useState(defaultValues);
+  //Storing the values from the form
+  const [teammates, setTeammates] = useState([]);
+
+   return (
     <div className="App">
-      <header className="App-header">
+      <TeamList />
+      <Form />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,9 +45,4 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+      </header> */}
