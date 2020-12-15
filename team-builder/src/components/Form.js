@@ -25,11 +25,17 @@ export default function Form(props) {
           </label>
           <label htmlFor="role">
             Role
-            <input
+            <select name="role" value={formValues.role} onChange={change}>
+            <option value="">------select role------</option>
+            <option value="instructor">Instructor</option>
+            <option value="student">Student</option>
+            <option value="tl">Team Lead</option>
+          </select>
+            {/* <input
               type="role"
               name="role"
               value={formValues.role}
-              onChange={change}
+              onChange={change} */}
             />
           </label>
           <button>Submit</button>
