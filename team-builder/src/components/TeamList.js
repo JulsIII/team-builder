@@ -1,6 +1,3 @@
-
-
-
 export default function TeamList(props) {
     const { tList } = props;
     console.log('array', tList);
@@ -17,7 +14,3 @@ export default function TeamList(props) {
     )
 }
 
-
-// username: "",
-// email: "",
-// role: "",

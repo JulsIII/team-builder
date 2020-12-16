@@ -31,12 +31,6 @@ export default function Form(props) {
             <option value="student">Student</option>
             <option value="tl">Team Lead</option>
           </select>
-            {/* <input
-              type="role"
-              name="role"
-              value={formValues.role}
-              onChange={change} */}
-            />
           </label>
           <button>Submit</button>
         </form>

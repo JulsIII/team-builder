@@ -22,8 +22,8 @@ In this project you'll build an app that will keep track of memebers of a team. 
 
 ### Task 2: Minimum Viable Product
 
-- [ ] Render a list of team members from state.
-- [ ] Build a form to add a new member to the list of members.
+- [*] Render a list of team members from state.
+- [*] Build a form to add a new member to the list of members.
 
 #### Setup your state
 
@@ -82,5 +82,4 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Style the forms. There are some subtle browser defaults for input tags that might need to be overwritten based on their state (active, focus, hover, etc.); Keep those CSS skill sharp.
 
 ## Submission Format
-
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+- [*] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
