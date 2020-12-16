@@ -14,7 +14,7 @@ function App() {
   
   const [formValues, setFormValues] = useState(defaultValues);
   
-  const [savedFormInfo, setSavedFormInfo] = useState([]);
+  const [savedTeamInfo, setSavedTeamInfo] = useState([]);
 
   const change = (evt) => {
 
@@ -33,15 +33,15 @@ function App() {
     role: formValues.role.trimEnd(),
   };
 
-  setSavedFormInfo([...savedFormInfo, newData]);
+  setSavedTeamInfo([...savedTeamInfo, newData]);
   setFormValues(defaultValues);
-  
+
 };
 
    return (
     <div className="App">
       <Form formValues={formValues} change={change} submit={submit}/>
-      <TeamList tList={savedFormInfo} />
+      <TeamList tList={savedTeamInfo} />
     </div>
   );
 }
